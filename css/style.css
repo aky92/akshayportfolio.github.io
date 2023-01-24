@@ -1,0 +1,211 @@
+:root {
+  --primary-org:#FB7F14;
+  --primary-green:#D2E8C5;
+  --primary-red:#ED3237;
+  --main-font:'Poppins', sans-serif;
+  --title-font:'Kaushan Script', cursive; }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5% !important;
+  font-family: inherit;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  font-family: var(--main-font) !important;
+  font-size: 62.5% !important;
+  color: #383838;
+  overflow-x: hidden; }
+
+.pt-5 {
+  padding-top: 5px; }
+
+.pt-10 {
+  padding-top: 10px; }
+
+.pt-15 {
+  padding-top: 15px; }
+
+.pt-30 {
+  padding-top: 30px; }
+
+.homepage__top--fbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #747474; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .homepage__top--fbox {
+      flex-direction: column; } }
+  .homepage__top--fbox > div {
+    background-color: #363543;
+    width: 50%;
+    height: 100vh; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .homepage__top--fbox > div {
+        height: auto;
+        width: 100%; } }
+  .homepage__top--fbox-imgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative; }
+    .homepage__top--fbox-imgcontainer .inner-fbox {
+      display: flex;
+      padding-top: 20px; }
+      .homepage__top--fbox-imgcontainer .inner-fbox > div {
+        padding: 10px 12px;
+        background-color: #2a2932;
+        margin: 5px;
+        border-radius: 18px;
+        box-shadow: -1px 2px 0px 1px #00000057; }
+  .homepage__top--fbox-datacontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative; }
+    .homepage__top--fbox-datacontainer h1 {
+      color: #ebebeb;
+      font-family: var(--title-font);
+      font-size: 5rem;
+      padding: 15px 25px; }
+    .homepage__top--fbox-datacontainer h2 {
+      color: #ebebeb;
+      font-family: var(--main-font);
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.5;
+      padding: 15px 25px; }
+
+.homepage__skill--fbox {
+  display: flex;
+  background-color: #2a2932;
+  height: 40vh;
+  z-index: -1;
+  justify-content: space-around;
+  align-items: center; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .homepage__skill--fbox {
+      flex-direction: column;
+      height: auto; } }
+  .homepage__skill--fbox .title {
+    color: #ebebeb;
+    font-size: 2.2rem;
+    text-align: center; }
+  .homepage__skill--fbox .data {
+    color: #ebebeb;
+    font-size: 1.6rem;
+    text-align: center; }
+  .homepage__skill--fbox .fbox-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .homepage__skill--fbox .fbox-inner > div {
+      padding: 10px; }
+
+.homepage__projects h3 {
+  color: #ebebeb;
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1; }
+  .homepage__projects h3:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1; }
+  .homepage__projects h3 span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #747474;
+    padding: 0 15px; }
+
+.homepage__projects h4 {
+  color: #ebebeb;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 10px 0; }
+
+.homepage__projects--fbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .homepage__projects--fbox {
+      flex-direction: column;
+      padding: 30px 15px; } }
+  .homepage__projects--fbox .l-child {
+    padding: 5px 50px; }
+  .homepage__projects--fbox .r-child {
+    padding: 10px;
+    background-color: #2a2932; }
+  .homepage__projects--fbox .title {
+    color: #ebebeb;
+    margin: 0;
+    font-size: 1.9rem; }
+  .homepage__projects--fbox .data {
+    color: #ebebeb;
+    margin: 0;
+    font-size: 1.6rem; }
+  .homepage__projects--fbox span, .homepage__projects--fbox a, .homepage__projects--fbox a:hover {
+    color: #ebebeb;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline; }
+
+.homepage__projects--fbox2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .homepage__projects--fbox2 {
+      flex-direction: column; } }
+  .homepage__projects--fbox2 > div {
+    width: 33%;
+    margin: 0 10px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .homepage__projects--fbox2 > div {
+        width: 100%;
+        margin: 10px; } }
+  .homepage__projects--fbox2 > .l-child {
+    padding: 5px 50px; }
+  .homepage__projects--fbox2 > .r-child {
+    padding: 10px;
+    background-color: #2a2932; }
+  .homepage__projects--fbox2 .title {
+    color: #ebebeb;
+    margin: 0;
+    font-size: 1.9rem; }
+  .homepage__projects--fbox2 .data {
+    color: #ebebeb;
+    margin: 0;
+    font-size: 1.6rem; }
+  .homepage__projects--fbox2 span, .homepage__projects--fbox2 a, .homepage__projects--fbox2 a:hover {
+    color: #ebebeb;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline; }
